@@ -1,0 +1,46 @@
+
+section {
+  display: flex;
+  border: solid black 1px;
+  width: 850px;
+  height: 450px;
+  margin: 10px;
+  }
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  font-size: xxx-large;
+  font-family: sans-serif;
+  font-style: bold;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-info {
+  border: solid black 1px;
+  justify-content: space-evenly;
+  background-color: rgb(226, 220, 220);
+  font-family: sans-serif;
+  font-size: 80%;
+  width: 850px;
+}
+
+div {
+  border: solid black 1px;
+  margin: 10px;
+  width: 270px;
+}
+
+button {
+  margin-top: 5px;
+  color: white;
+  background-color: grey;
+}
