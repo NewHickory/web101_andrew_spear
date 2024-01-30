@@ -1,8 +1,78 @@
 body {
-  background-color: royalblue;
+  margin: 0;
 }
 
-h1 {
-  font-size: 40px;
-  color: rgb(137, 174, 207)
+.border1 {
+  border: solid 1px black
+}
+
+.border2 {
+  border: solid 1px red
+}
+
+.border3 {
+  border: solid 1px green
+}
+
+.main-container {
+  height: 100vh;
+  /* display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr); */
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* nav {
+  height: 80px;
+}
+
+nav, main, footer {
+  height: 33%;
+} */
+
+nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 00;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  height: calc(100% - 160px)
+}
+
+footer {
+  height: 80px;
+}
+
+@media (max-width: 430px) {
+  /* body {
+    background-color: red;
+  } */
+
+  nav {
+    height: auto; 
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+  nav ul {
+    flex-direction: column;
+    width: auto;
+  }
+
 }
