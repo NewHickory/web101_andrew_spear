@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="../styles/contact-styles.css">
+  <script src="../js/contact-script.js"></script>
+</head>
+<body>
+  <nav>
+
+  </nav>
+  
+  <main>
+    <h1>Contact</h1>
+    <form action="results.html" method="get" enctype="multipart/form-data">
+      
+      <section>
+        <label for="first_name">First Name:</label>
+        <input type="text" name="first_name" id="first_name" required>
+        <label for="last_name"">Last Name:</label>
+        <input type="text" name="last_name" id="last_name" required>
+      </section>
+      <section>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+      </section>
+      <section>
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments" cols="30" rows="10" maxlength="500" minlength="20" placeholder="Comments"></textarea>
+      </section>
+      <section>
+        <label for="how">How did you hear about me?</label>
+        <div>
+          <label for="classmate">Classmate</label>
+          <input type="checkbox" name="how" id="classmate">
+        </div>
+        <div>
+          <label for="resume">Resume Submission</label>
+          <input type="checkbox" name="how" id="resume">
+        </div>
+        <div>
+          <label for="linkedin">LinkedIn</label>
+          <input type="checkbox" name="how" id="linkedin">
+        </div>
+        <div>
+          <label for="coding">Coding Academy Rec</label>
+          <input type="checkbox" name="how" id="coding">
+        </div>
+      </section>
+      <section>
+        <div>
+          <label for="contact">Would you like to be contacted?</label>
+        </div>
+        <div>
+          <label for="contact_yes">Yes</label>
+          <input type="radio" name="contact" id="contact_yes" value="yes">
+        </div>
+        <div>
+          <label for="contact_no">No</label>
+          <input type="radio" name="contact" id="contact_no" value="no">
+        </div>
+      </section>
+      <section>
+        <label for="birthday">Select your birthday to get a birthday gift.</label>
+        <input type="date" name="birthday" id="birthday">
+      </section>
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+      <!-- <input type="submit" onclick="handleSubmit()"> -->
+    </form>
+  </main>
+</body>
+</html>
